@@ -1,0 +1,23 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="SymbolManager.c95dc224-e85f-4250-8ef7-3a2b53481622" Version="1.1" Language="en-US" Publisher="胡箫儿" />
+    <DisplayName>SymbolManager</DisplayName>
+    <Description xml:space="preserve">This is a way of using shortcuts to add ";"and "{}"in the right place.See the details for more details.
+
+		</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" Version="[16.0,17.0)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="SymbolManager.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="SymbolManager.dll" />
+  </Assets>
+</PackageManifest>

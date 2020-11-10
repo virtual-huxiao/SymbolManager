@@ -1,0 +1,35 @@
+<PackageManifest Version="2.0.0" xmlns="http://schemas.microsoft.com/developer/vsx-schema/2011">
+  <Metadata>
+    <Identity Id="SymbolManager.c95dc224-e85f-4250-8ef7-3a2b53481622" Version="1.0" Language="en-US" Publisher="胡箫儿" />
+    <DisplayName>SymbolManager</DisplayName>
+    <Description>This is a way of using shortcuts to add ";"and "{}"in the right place
+					The default shortcut key is:
+					Add semicolon to end of line (Ctrl+Shit+;);Add a semicolon to the end of the line and wrap (Ctrl+Alt+;);
+					Add the js specification curly braces,"{" not on a new line (Ctrl+Shift+Alt+]);Add C++ specification curly braces,"{" on a new line (Ctrl+Alt+])
+					The above shortcut can be set by using a shortcut search for "SymbolManager".
+					For more see details.
+
+					//Chinese
+					这是一个使用快捷键的方式去在对的地方添加";"和"{}".
+					默认的快捷键是:
+					添加分号到行尾(Ctrl+Shit+;);添加分号到行尾并换行(Ctrl+Alt+;);
+					添加js规范花括号,"{"不在新的一行 (Ctrl+Shift+Alt+]);添加C++规范花括号,"{"在新的一行 (Ctrl+Alt+])
+					以上快捷方式可以通过快捷方式搜索"SymbolManager"进行设置.
+					想了解更多见详情.
+				</Description>
+  </Metadata>
+  <Installation>
+    <InstallationTarget Id="Microsoft.VisualStudio.Community" Version="[16.0, 17.0)" />
+  </Installation>
+  <Dependencies>
+    <Dependency Id="Microsoft.Framework.NDP" DisplayName="Microsoft .NET Framework" Version="[4.5,)" />
+    <Dependency Id="Microsoft.VisualStudio.MPF.16.0" DisplayName="Visual Studio MPF 16.0" Version="[16.0,17.0)" />
+  </Dependencies>
+  <Prerequisites>
+    <Prerequisite Id="Microsoft.VisualStudio.Component.CoreEditor" Version="[16.0,17.0)" DisplayName="Visual Studio core editor" />
+  </Prerequisites>
+  <Assets>
+    <Asset Type="Microsoft.VisualStudio.VsPackage" Path="SymbolManager.pkgdef" />
+    <Asset Type="Microsoft.VisualStudio.MefComponent" Path="SymbolManager.dll" />
+  </Assets>
+</PackageManifest>

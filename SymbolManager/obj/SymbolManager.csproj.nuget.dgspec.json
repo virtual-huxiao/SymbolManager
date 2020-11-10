@@ -1,0 +1,62 @@
+{
+  "format": 1,
+  "restore": {
+    "D:\\code\\C#\\SymbolManager\\SymbolManager\\SymbolManager.csproj": {}
+  },
+  "projects": {
+    "D:\\code\\C#\\SymbolManager\\SymbolManager\\SymbolManager.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\code\\C#\\SymbolManager\\SymbolManager\\SymbolManager.csproj",
+        "projectName": "SymbolManager",
+        "projectPath": "D:\\code\\C#\\SymbolManager\\SymbolManager\\SymbolManager.csproj",
+        "packagesPath": "C:\\Users\\family\\.nuget\\packages\\",
+        "outputPath": "D:\\code\\C#\\SymbolManager\\SymbolManager\\obj\\",
+        "projectStyle": "PackageReference",
+        "skipContentFileWrite": true,
+        "configFilePaths": [
+          "C:\\Users\\family\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "projectReferences": {}
+          }
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "dependencies": {
+            "Microsoft.VSSDK.BuildTools": {
+              "target": "Package",
+              "version": "[16.7.3069, )"
+            },
+            "Microsoft.VisualStudio.SDK": {
+              "include": "Compile, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "target": "Package",
+              "version": "[16.0.206, )"
+            }
+          }
+        }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

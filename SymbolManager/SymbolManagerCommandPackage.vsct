@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<CommandTable xmlns="http://schemas.microsoft.com/VisualStudio/2005-10-18/CommandTable" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <Extern href="stdidcmd.h"/>
+
+  <Extern href="vsshlids.h"/>
+  <Commands package="guidMySymbolManagerPackage">
+    <Groups>
+      <Group guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerMenu" priority="0x0600">
+        <Parent guid="guidSHLMainMenu" id="IDM_VS_MENU_EDIT"/>
+      </Group>
+
+			<Group guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" priority="0x7000">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="MyCommandId"/>
+			</Group>
+			
+    </Groups>
+
+    <Menus>
+      <Menu guid="guidSymbolManagerPackageCmdSet" id="MyCommandId" priority="0x0100" type="Menu">
+        <Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerMenu" />
+        <Strings>
+          <ButtonText>Symbol manager</ButtonText>
+				  <MenuText>Symbol manager</MenuText>
+        </Strings>
+      </Menu>
+		</Menus>
+		
+		
+		<Buttons>
+		  <Button guid="guidSymbolManagerPackageCmdSet" id="addSemicolonAtEndOfLine" priority="0x0100" type="Button">
+        <Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+		     <Strings>
+          <ButtonText>SymbolManager.addSemicolonAtEndOfLine</ButtonText>
+				  <CommandName>SymbolManager.addSemicolonAtEndOfLine</CommandName>
+				 </Strings>
+		  </Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="addSemicolonThenToNextLine" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.addSemicolonThenToNextLine</ButtonText>
+					<CommandName>SymbolManager.addSemicolonThenToNextLine</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="addBrace4JSStandard" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.addBrace4JSStandard</ButtonText>
+					<CommandName>SymbolManager.addBrace4JSStandard</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="addBrace4CPPStandard" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.addBrace4CPPStandard</ButtonText>
+					<CommandName>SymbolManager.addBrace4CPPStandard</CommandName>
+				</Strings>
+			</Button>
+		</Buttons>
+  </Commands>
+
+	<KeyBindings>
+		<KeyBinding guid="guidSymbolManagerPackageCmdSet" id="addSemicolonAtEndOfLine" key1="VK_OEM_1" mod1="Control Shift" editor="guidVSStd97" />
+	</KeyBindings>
+	<KeyBindings>
+		<KeyBinding guid="guidSymbolManagerPackageCmdSet" id="addSemicolonThenToNextLine" key1="VK_OEM_1" mod1="Control Alt" editor="guidVSStd97" />
+	</KeyBindings>
+	<KeyBindings>
+		<KeyBinding guid="guidSymbolManagerPackageCmdSet" id="addBrace4JSStandard" key1="VK_OEM_6" mod1="Control Shift Alt" editor="guidVSStd97" />
+	</KeyBindings>
+	<KeyBindings>
+		<KeyBinding guid="guidSymbolManagerPackageCmdSet" id="addBrace4CPPStandard" key1="VK_OEM_6" mod1="Control Alt" editor="guidVSStd97" />
+	</KeyBindings>
+
+  <Symbols>
+    <GuidSymbol name="guidMySymbolManagerPackage" value="{aecebe3c-dd98-4d0a-bb9f-54a5e1b39858}" />
+
+    <GuidSymbol name="guidSymbolManagerPackageCmdSet" value="{b0ac23f3-f7de-4267-ac5d-3a4aca3dd993}">
+      <IDSymbol name="sysbolManagerMenu" value="0x1020" />
+      <IDSymbol name="MyCommandId" value="0x0100" />
+
+			
+			<IDSymbol name="addSemicolonAtEndOfLine" value="0x1100"/>
+			<IDSymbol name="addSemicolonThenToNextLine" value="0x1101"/>
+			<IDSymbol name="addBrace4JSStandard" value="0x1102"/>
+			<IDSymbol name="addBrace4CPPStandard" value="0x1103"/>
+			
+			<IDSymbol name="sysbolManagerSubMenu" value="0x1150"/>
+		</GuidSymbol>
+
+  </Symbols>
+</CommandTable>
