@@ -59,6 +59,121 @@
 					<CommandName>SymbolManager.addBrace4CPPStandard</CommandName>
 				</Strings>
 			</Button>
+
+<!-- 插入符号========================================================================================== -->
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertPlus" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertPlus</ButtonText>
+					<CommandName>SymbolManager.insertPlus</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertMinus" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertMinus</ButtonText>
+					<CommandName>SymbolManager.insertMinus</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertMultiplied" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertMultiplied</ButtonText>
+					<CommandName>SymbolManager.insertMultiplied</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertDivided" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertDivided</ButtonText>
+					<CommandName>SymbolManager.insertDivided</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertEqual" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertEqual</ButtonText>
+					<CommandName>SymbolManager.insertEqual</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertPerCent" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertPerCent</ButtonText>
+					<CommandName>SymbolManager.insertPerCent</CommandName>
+				</Strings>
+			</Button>
+			
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertAmpersand" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertAmpersand</ButtonText>
+					<CommandName>SymbolManager.insertAmpersand</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertUnderscore" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertUnderscore</ButtonText>
+					<CommandName>SymbolManager.insertUnderscore</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertEllipsis" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertEllipsis</ButtonText>
+					<CommandName>SymbolManager.insertEllipsis</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertVerticalBar" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertVerticalBar</ButtonText>
+					<CommandName>SymbolManager.insertVerticalBar</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertOr" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertOr</ButtonText>
+					<CommandName>SymbolManager.insertOr</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertAnd" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertAnd</ButtonText>
+					<CommandName>SymbolManager.insertAnd</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertXor" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertXor</ButtonText>
+					<CommandName>SymbolManager.insertXor</CommandName>
+				</Strings>
+			</Button>
+
+			<Button guid="guidSymbolManagerPackageCmdSet" id="insertTilde" priority="0x0100" type="Button">
+				<Parent guid="guidSymbolManagerPackageCmdSet" id="sysbolManagerSubMenu" />
+				<Strings>
+					<ButtonText>SymbolManager.insertTilde</ButtonText>
+					<CommandName>SymbolManager.insertTilde</CommandName>
+				</Strings>
+			</Button>
+
 		</Buttons>
   </Commands>
 
@@ -83,11 +198,29 @@
       <IDSymbol name="MyCommandId" value="0x0100" />
 
 			
-			<IDSymbol name="addSemicolonAtEndOfLine" value="0x1100"/>
+			<IDSymbol name="addSemicolonAtEndOfLine"    value="0x1100"/>
 			<IDSymbol name="addSemicolonThenToNextLine" value="0x1101"/>
-			<IDSymbol name="addBrace4JSStandard" value="0x1102"/>
-			<IDSymbol name="addBrace4CPPStandard" value="0x1103"/>
-			
+			<IDSymbol name="addBrace4JSStandard"        value="0x1102"/>
+			<IDSymbol name="addBrace4CPPStandard"       value="0x1103"/>
+
+			<IDSymbol name="insertPlus"                 value="0x1104"/>
+			<IDSymbol name="insertMinus"                value="0x1105"/>
+			<IDSymbol name="insertMultiplied"           value="0x1106"/>
+			<IDSymbol name="insertDivided"              value="0x1107"/>
+			<IDSymbol name="insertEqual"                value="0x1108"/>
+			<IDSymbol name="insertPerCent"              value="0x1109"/>
+			<IDSymbol name="insertAmpersand"            value="0x1110"/>
+			<IDSymbol name="insertUnderscore"           value="0x1111"/>
+			<IDSymbol name="insertEllipsis"             value="0x1112"/>
+			<IDSymbol name="insertVerticalBar"          value="0x1113"/>
+			<IDSymbol name="insertOr"                   value="0x1114"/>
+			<IDSymbol name="insertAnd"                  value="0x1115"/>
+			<IDSymbol name="insertXor"                  value="0x1116"/>
+			<IDSymbol name="insertTilde"                value="0x1117"/>
+
+
+
+
 			<IDSymbol name="sysbolManagerSubMenu" value="0x1150"/>
 		</GuidSymbol>
 

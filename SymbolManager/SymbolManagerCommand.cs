@@ -44,20 +44,76 @@ namespace SymbolManager
 			{
 				switch (nCmdID)
 				{
-					case PkgCmdIDList.addSemicolonAtEndOfLineID:
+					case PkgCmdIDList.addSemicolonAtEndOfLineID:   //向行添加分号
 						addSemicolonAtEndOfLine();
 						break;
 
-					case PkgCmdIDList.addSemicolonThenToNextLineID:
+					case PkgCmdIDList.addSemicolonThenToNextLineID://插入分号并换行
 						addSemicolonThenToNextLine();
 						break;
 
-					case PkgCmdIDList.addBrace4JSStandardID:
+					case PkgCmdIDList.addBrace4JSStandardID:       //实现插入{},但是{与插入行同行
 						addBrace4JSStandard();
 						break;
 
-					case PkgCmdIDList.addBrace4CPPStandardID:
+					case PkgCmdIDList.addBrace4CPPStandardID:      //实现插入{},{和}各占新的一行
 						addBrace4CPPStandard();
+						break;
+						
+					case PkgCmdIDList.insertPlusID:	
+						insert("+");
+						break;
+
+					case PkgCmdIDList.insertMinusID:
+						insert("-");
+						break;
+
+					case PkgCmdIDList.insertMultipliedID:
+						insert("*");
+						break;
+
+					case PkgCmdIDList.insertDividedID:
+						insert("/");
+						break;
+
+					case PkgCmdIDList.insertEqualID:
+						insert("=");
+						break;
+
+					case PkgCmdIDList.insertPerCentID:
+						insert("%");
+						break;
+
+					case PkgCmdIDList.insertUnderscoreID:
+						insert("_");
+						break;
+
+					case PkgCmdIDList.insertAmpersandID:
+						insert("&");
+						break;
+
+					case PkgCmdIDList.insertEllipsisID:
+						insert("...");
+						break;
+
+					case PkgCmdIDList.insertVerticalBarID:
+						insert("|");
+						break;
+
+					case PkgCmdIDList.insertOrID:
+						insert("||");
+						break;
+
+					case PkgCmdIDList.insertAndID:
+						insert("&&");
+						break;
+
+					case PkgCmdIDList.insertXorID:
+						insert("^");
+						break;
+
+					case PkgCmdIDList.insertTildeID:
+						insert("~");
 						break;
 
 					default:
@@ -110,6 +166,12 @@ namespace SymbolManager
 			m_edit.DecreaseLineIndent();
 			m_edit.OpenLineAbove();
 
+		}
+
+		//插入指定符号
+		private void insert(String symbol)
+		{
+			m_edit.InsertText(symbol);
 		}
 	}
 }
